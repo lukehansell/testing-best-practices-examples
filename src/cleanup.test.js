@@ -1,8 +1,13 @@
 const { useInterval } = require('./cleanup')
 
 describe('testing with intervals', () => {
+  let interval
   beforeEach(() => {
-    useInterval()
+    interval = useInterval()
+  })
+
+  afterEach(() => {
+    clearInterval(interval)
   })
 
   it('can finish', () => {

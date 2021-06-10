@@ -8,6 +8,8 @@ describe('contrived example', () => {
     contrivedExampleFunc = () => lib.getValue()
   })
 
+  afterEach(sinon.restore)
+
   it('returns the value from getValue', () => {
     expect(contrivedExampleFunc()).to.equal(false)
   })
