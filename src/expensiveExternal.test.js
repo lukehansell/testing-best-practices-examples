@@ -1,4 +1,3 @@
-const expect = require('chai').expect
 const { fetchExternal } = require('./expensiveExternal')
 
 describe('with external dependencies', () => {
